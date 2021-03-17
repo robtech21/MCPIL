@@ -27,15 +27,13 @@ from typing import Dict
 
 from proxy.proxy import Proxy
 
-import launcher
-import config
+import launcher, config
 
 from splashes import SPLASHES
 import random
 
 from os import kill, killpg, getpid, getpgid
-import platform
-import threading
+import platform, threading
 
 from subprocess import Popen
 
