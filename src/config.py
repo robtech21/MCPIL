@@ -1,8 +1,6 @@
-import json
+import json, launcher
 
 from pathlib import Path
-
-import launcher
 
 def _get_config_path() -> str:
     return str(Path.home()) + '/.mcpil.json'
