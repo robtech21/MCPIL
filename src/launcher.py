@@ -22,8 +22,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import subprocess
-import os
+import subprocess, os
 from typing import Dict
 
 # Feature Parse Failure
@@ -43,7 +42,7 @@ def _get_features() -> Dict[str, bool]:
     result.check_returncode()
 
     stage = 0
-    skip = 0
+    skip  = 0
     escaped = False
     current_default = False
     current_name = ''
